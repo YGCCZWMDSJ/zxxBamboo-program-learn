@@ -8,4 +8,6 @@
 ![VSCODE逐步python_step12](../images/VSCODE%E9%80%90%E6%AD%A5python_step12.png)
 ![VSCODE逐步python_step13](../images/VSCODE%E9%80%90%E6%AD%A5python_step13.png)
 ![VSCODE逐步python_step14](../images/VSCODE%E9%80%90%E6%AD%A5python_step14.png)
-### step2 介绍调试条功能
+### step2 介绍调试时比较好玩的功能
+![VSCODE逐步python_step21](../images/VSCODE%E9%80%90%E6%AD%A5python_step21.png)
+### 调试条框
