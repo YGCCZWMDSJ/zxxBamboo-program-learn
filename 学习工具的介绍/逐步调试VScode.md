@@ -30,5 +30,50 @@
 ![VSCODE逐步python_step24](images/b6e99adefc76ba7356541add75ed7ead3e8f3afe934e7560e28f4bb42c54f70a.png)  
 
 #### 左栏断点框
+![VSCODE逐步python_step25](images/054e48a6a070a1ffd134990069108ad2562c67bf42abd4f9a57f1e81b9211b91.png)  
 
 #### 下方调试控制台
+![VSCODE逐步python_step26](images/fad4b9296463d3980cfe3b1ac1f9945c824f2e765824b3a933a882761dadecfe.png)  
+下面是简单的调试演示：
+![VSCODE逐步python_step262](images/e4d19dc9117e44baf8411386ec7ba5b2ac10b46360f2c5ade59c98d4283e5873.png)  
+![VSCODE逐步python_step263](images/60e23b266998dce13a4bb00e1342ced6678a1df8e87d4565c2fc950259613975.png)  
+
+## 调试C/C++
+> 这个的环境是大头，主要是因为缺gcc
+### 环境安装
+推荐文章：
+https://blog.csdn.net/m0_62721576/article/details/127207028
+按需据教程安装
+### 调试
+与python大同小异，比较有意思的是调试时的左边变量框
+![VSCODE逐步python_step271](images/23a12cd12c81d9c8fe8fa57f1b1766220d662dac3b0f957a399d312f014aa83a.png)  
+
+## 调试Java
+### 环境安装
+https://blog.csdn.net/LKFMYQQ/article/details/120519567
+vscode扩展安装：Java Extension Pack(包含插件Java Debugger for Visual Studio Code+插件Language Support for Java™ by Red Hat)
+### 调试步骤
+1. 准备项目。打开一个 .java 文件，Java 扩展会激活。Maven、Gradle 和 Eclipse 项目都能得到支持。这个扩展会自动构建项目，不需要手工触发构建。
+
+2. 开始调试。切换到调试视图(Ctrl+Shift+D)，打开 launch.json 并添加 Java 调试配置。
+
+3. 在 mainClass 中填入要启动的类，或者在hostName 中填入要附加的主机名以及在 port 中填入端口。
+
+4. 设置断点并按 F5 开始调试
+
+剩下操作与python大同小异
+
+________________________________
+~~懒了，php，vue，go，R那些不想写了,除了环境都差不多~~
+算了，php也给个地址吧：https://blog.csdn.net/qq_44803335/article/details/108806851
+
+**又到了题主喜闻乐见的交友时刻（喜）**
+## 资料共和学习白嫖群，资料全弄的网盘的：
+![图 17](images/fe7cf61096d40b0f0f3a590df3f5231c885888052fc24b26082a73070ce3c520.png)  
+还有群主的每日打卡以此来下饭促学（喜）
+## chatgpt plus 共和合用群
+![图 18](images/2b8505352cc4bd96185cf57b261161706485ec4e19035ed66d2add634b19f088.png)  
+
+## 题主的Offensive Security系列之路
+![图 19](images/e7aa53eccef9fac898a31283256ceece3040a0705adcb008999c5a58427965e6.png)  
+有意愿来玩的或者来见证群主痛苦的来！群主愿意做你的共学伙伴（喜）一起的话还有每天的撅醒服务（悲）
