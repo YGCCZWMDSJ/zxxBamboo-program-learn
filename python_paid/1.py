@@ -1,0 +1,7 @@
+myN = input()
+print('aa'+myN)
+print('len:')
+print(len(myN))
+print('age:')
+age = input()
+print('You will be'+str(int(age)+1)+'in a year')
