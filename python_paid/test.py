@@ -1,36 +1,32 @@
-import tkinter as tk
+from collections import deque
 
-# 初始化Tkinter窗口
-root = tk.Tk()
-root.title("可移动的数字块")
+def bfs(graph, start, target):
+    visited = set()
+    queue = deque([(start, [start])])
 
-# 创建Canvas小部件
-canvas = tk.Canvas(root, width=400, height=400, bg="white")
-canvas.pack()
+    while queue:
+        node, path = queue.popleft()
 
-# 创建一个类来表示可移动的数字块
-class NumberBlock:
-    def __init__(self, canvas, x, y, number):
-        self.canvas = canvas
-        self.x = x
-        self.y = y
-        self.number = number
-        self.text_id = canvas.create_text(x, y, text=str(number), font=("Helvetica", 24), fill="black")
+        if node == target:
+            return path
 
-    def move(self, dx, dy):
-        self.canvas.move(self.text_id, dx, dy)
-        self.x += dx
-        self.y += dy
+        if node not in visited:
+            visited.add(node)
+            for neighbor in graph[node]:
+                if neighbor not in visited:
+                    queue.append((neighbor, path + [neighbor]))
 
-# 创建可移动的数字块示例
-block1 = NumberBlock(canvas, 50, 50, 1)
-block2 = NumberBlock(canvas, 150, 50, 2)
-block3 = NumberBlock(canvas, 250, 50, 3)
+# 示例图的邻接字典表示
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+}
 
-# 移动数字块示例
-block1.move(0, 50)
-block2.move(0, 50)
-block3.move(0, 50)
-
-# 启动主循环
-root.mainloop()
+start_node = 'A'
+target_node = 'F'
+shortest_path = bfs(graph, start_node, target_node)
+print("Shortest path from {} to {}: {}".format(start_node, target_node, shortest_path))
